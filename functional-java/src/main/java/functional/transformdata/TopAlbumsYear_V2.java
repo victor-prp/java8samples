@@ -13,6 +13,7 @@ import static java.util.stream.Collectors.toList;
  * @author victorp
  */
 public class TopAlbumsYear_V2 {
+
     public static List<Integer> topUKandUS_Year(List<Album> albums) {
         return albums
                 .stream()

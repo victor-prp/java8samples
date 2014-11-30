@@ -16,15 +16,15 @@ import static functional.search.Filter.*;
  */
 public class SearchAlbum_V1 {
 
-    public static List<Album> searchByName(List<Album> customers, String name){
-        return customers.stream()
+    public static List<Album> searchByName(List<Album> albums, String name){
+        return albums.stream()
                 .filter(byName(name))
                 .collect(Collectors.toList());
 
     }
 
-    public static List<Album> searchByYear(List<Album> customers, int year){
-        return customers.stream()
+    public static List<Album> searchByYear(List<Album> albums, int year){
+        return albums.stream()
                 .filter(byYear(year))
                 .collect(Collectors.toList());
 

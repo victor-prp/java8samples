@@ -11,6 +11,8 @@ import java.util.function.Function;
  * @author victorp
  */
 public class SumAndSquare {
+
+
     static final BiFunction<Integer,Integer,Integer> sum = (x,y)->x+y;
     static final Function<Integer,Integer> square = (x)->x*x;
 

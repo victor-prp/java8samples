@@ -16,8 +16,8 @@ public class TopAlbums_V2 {
                 .stream()
                 .filter( album ->album.ukChart == 1 && album.usChart == 1)
                 .collect(toList());
-
     }
+
 
     public static void main(String... args) {
         println(topUKandUS(AlbumRegistry.ALBUMS), "(v2) topUKandUS:");

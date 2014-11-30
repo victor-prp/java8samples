@@ -16,7 +16,8 @@ public class Java8Mystery {
        Map<String,Integer> results = new HashMap<>();
        elements.stream()
                .collect(groupingBy(identity()))
-               .forEach((e, elementsInGroup) -> results.put(e, elementsInGroup.size()));
+               .forEach((e, elementsInGroup) ->
+                       results.put(e, elementsInGroup.size()));
         return results;
     }
 

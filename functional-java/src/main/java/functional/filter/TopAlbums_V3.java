@@ -8,8 +8,9 @@ import static java.util.stream.Collectors.*;
 /**
  * @author victorp
  */
+
 public class TopAlbums_V3 {
-    public static List<Album> topUKandUS(List<Album> albums){
+    public static List<Album> topUKandUS(List<Album> albums) {
         return albums
                 .stream()
                 .filter(TopAlbums_V3::hitAlbum)

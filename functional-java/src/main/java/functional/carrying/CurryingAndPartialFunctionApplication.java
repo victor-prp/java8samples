@@ -10,6 +10,8 @@ import static java.lang.System.*;
  * @author victorp
  */
 public class CurryingAndPartialFunctionApplication {
+
+
     public static void main(String[] args)
     {
         IntBinaryOperator simpleAdd = (a, b) -> a + b;

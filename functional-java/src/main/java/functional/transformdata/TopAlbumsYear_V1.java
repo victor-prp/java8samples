@@ -13,6 +13,7 @@ import static functional.filter.AlbumUtil.println;
  * @author victorp
  */
 public class TopAlbumsYear_V1 {
+
     public static List<Integer> topUKandUS_Year(List<Album> albums) {
         List<Album> hits = TopAlbums_V3.topUKandUS(albums);
 

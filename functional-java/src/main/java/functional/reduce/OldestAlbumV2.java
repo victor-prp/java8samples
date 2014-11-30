@@ -17,11 +17,7 @@ public class OldestAlbumV2 {
     }
 
     public static Album older(Album left, Album right){
-        if (left.getYear() < right.getYear()){
-            return left;
-        }else{
-            return right;
-        }
+        return left.getYear() < right.getYear() ? left : right;
     }
 
 

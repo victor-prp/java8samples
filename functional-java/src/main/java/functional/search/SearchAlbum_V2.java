@@ -16,8 +16,9 @@ import static functional.search.Filter.byYear;
  */
 public class SearchAlbum_V2 {
 
-    public static List<Album> searchByPredicate(List<Album> customers, Predicate<Album> predicate){
-        return customers.stream()
+    public static List<Album> searchByPredicate(List<Album> albums,
+                                                Predicate<Album> predicate){
+        return albums.stream()
                 .filter(predicate)
                 .collect(Collectors.toList());
     }

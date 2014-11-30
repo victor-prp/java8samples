@@ -8,6 +8,7 @@ import static functional.filter.Album.album;
 /**
  * @author victorp
  */
+
 public class AlbumRegistry {
     public static final List<Album> ALBUMS = Arrays.asList(
             album("The dark Side Of The Moon", 1973, 1,1),

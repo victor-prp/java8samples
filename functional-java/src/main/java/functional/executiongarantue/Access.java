@@ -14,10 +14,10 @@ public class Access {
     private ReadWriteLock lock = new ReentrantReadWriteLock();
     private List<String> data = new LinkedList<>();
 
-    public void executeSafely(Function<List<String>, ?> fun){
+    public <R> R executeSafely(Function<List<String>, R> fun){
         lock.writeLock().lock();
         try{
-           fun.apply(data);
+           return fun.apply(data);
         }finally {
             lock.writeLock().unlock();
         }
@@ -37,6 +37,10 @@ public class Access {
         });
 
         //with java 1.8
+
+
         access.executeSafely( data -> data.add("java 8"));
+
+
     }
 }
