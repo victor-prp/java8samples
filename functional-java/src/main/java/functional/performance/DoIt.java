@@ -7,10 +7,11 @@ import java.util.Set;
 import java.util.function.Consumer;
 
 
+
 /**
  * Here we show that performance may be very bad when using flat map <br/>
  *
- * @author: Victor
+ * @author: victorp
  */
 public class DoIt {
     public static void main(String...args){
@@ -59,7 +60,6 @@ public class DoIt {
     private static void printAsChar(int c){
         System.out.print((char)c);
     }
-
 
 
     private static void doIt1(List<String> words) {

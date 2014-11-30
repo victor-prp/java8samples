@@ -37,10 +37,6 @@ public class Access {
         });
 
         //with java 1.8
-
-
         access.executeSafely( data -> data.add("java 8"));
-
-
     }
 }

@@ -31,12 +31,10 @@ public class TopAlbums_V1 {
         return hits;
     }
 
+
+    public static void main(String... args) {
+        println(topUKandUS(), "(v1) topUKandUS:");
+    }
 }
-
-
-//    public static void main(String... args) {
-//        println(topUKandUS(), "(v1) topUKandUS:");
-//    }
-//}
 
 

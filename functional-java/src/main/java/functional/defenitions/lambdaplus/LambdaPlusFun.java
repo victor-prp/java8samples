@@ -19,6 +19,5 @@ public class LambdaPlusFun {
         calculate(5,2, LambdaPlusFun::multiply);
 
         calculate(5,2, (r,l)-> r-l);
-
     }
 }
