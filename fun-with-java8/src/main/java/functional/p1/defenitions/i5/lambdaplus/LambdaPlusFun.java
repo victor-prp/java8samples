@@ -1,6 +1,10 @@
 package functional.p1.defenitions.i5.lambdaplus;
 
+import functional.Util;
+
 import java.util.function.BiFunction;
+
+import static functional.Util.println;
 
 /**
  * @author victorp
@@ -15,9 +19,9 @@ public class LambdaPlusFun {
     }
 
     public static void main(String... args) {
-        calculate(5,2, LambdaPlusFun::sum);
-        calculate(5,2, LambdaPlusFun::multiply);
+        println(calculate(5, 2, LambdaPlusFun::sum));
+        println(calculate(5, 2, LambdaPlusFun::multiply));
 
-        calculate(5,2, (r,l)-> r-l);
+        println(calculate(5, 2, (r, l) -> r - l));
     }
 }

@@ -22,7 +22,7 @@ public class SearchWithPartialApplication {
                 .collect(Collectors.toList());
     }
 
-    public static void main(String... args) {
+    public static void main(String... args){
         println(
                 search(ALBUMS,
                         toPredicate(SearchWithPartialApplication::match,
