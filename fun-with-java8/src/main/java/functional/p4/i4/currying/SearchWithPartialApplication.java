@@ -15,6 +15,8 @@ import static functional.p3.i1.filter.AlbumUtil.println;
  * @author victorp
  */
 public class SearchWithPartialApplication {
+
+
     public static List<Album> search(List<Album> albums,
                                      Predicate<Album> predicate){
         return albums.stream()
@@ -26,10 +28,13 @@ public class SearchWithPartialApplication {
         println(
                 search(ALBUMS,
                         toPredicate(SearchWithPartialApplication::match,
-                                    "The Wall")),
+                                "The wall")),
                 "search with partial application");
     }
 
+    /**
+     * @return true is the given name matches the album name
+     */
     public static boolean match(Album album, String name){
         return album.getName().equals(name);
     }
