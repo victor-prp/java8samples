@@ -9,7 +9,7 @@ You are welcomed to comment and/or ask any question at http://bit.ly/FunJava8­.
 
 Tip: Each slide is marked with 'p' number (as p1, p2 etc.) this will help you to browse the code (package name) while watching the presentation.
 
-Video: http://bit.ly/FunJava8­
+Video: https://www.youtube.com/watch?v=LcfzV38YDu4&list=PL6C2802A403B7316F
 Slides: http://www.slideshare.net/LiveP...­
 
 Enjoy
